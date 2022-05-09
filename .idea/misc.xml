@@ -3,23 +3,35 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/drawable/backgroud.xml" value="0.2435" />
-        <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/drawable/background.xml" value="0.2435" />
-        <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/drawable/ic_add_img.xml" value="0.2435" />
-        <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/drawable/inputs.xml" value="0.2435" />
-        <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/drawable/login.xml" value="0.2435" />
-        <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/layout-v23/activity_registration.xml" value="0.25625" />
-        <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/layout/activity_login.xml" value="0.20742753623188406" />
-        <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/layout/activity_registration.xml" value="0.25343999226562525" />
-        <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/layout/activity_workouts_screen.xml" value="0.20742753623188406" />
-        <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/layout/difficulty_level.xml" value="0.20742753623188406" />
-        <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/layout/exercises_screen.xml" value="0.20742753623188406" />
-        <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/layout/workouts_screen.xml" value="0.20742753623188406" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3609375" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3155" />
+        <entry key="app/src/main/res/drawable/background.xml" value="0.3155" />
+        <entry key="app/src/main/res/drawable/ic_add_img.xml" value="0.164" />
+        <entry key="app/src/main/res/drawable/ic_back_img.xml" value="0.164" />
+        <entry key="app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.164" />
+        <entry key="app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.164" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.164" />
+        <entry key="app/src/main/res/drawable/ic_profile_background.xml" value="0.3155" />
+        <entry key="app/src/main/res/drawable/ic_profile_foreground.xml" value="0.3155" />
+        <entry key="app/src/main/res/drawable/ic_register_hero.xml" value="0.3155" />
+        <entry key="app/src/main/res/drawable/ic_settings_foreground.xml" value="0.3155" />
+        <entry key="app/src/main/res/drawable/ic_side_bg.xml" value="0.3155" />
+        <entry key="app/src/main/res/drawable/inputs.xml" value="0.2385" />
+        <entry key="app/src/main/res/drawable/login.xml" value="0.2385" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.2328125" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.16673583984374996" />
+        <entry key="app/src/main/res/layout/activity_registration.xml" value="0.23229166666666667" />
+        <entry key="app/src/main/res/layout/activity_workouts_screen.xml" value="0.23229166666666667" />
         <entry key="app/src/main/res/layout/difficulty_level.xml" value="0.2803442028985507" />
         <entry key="app/src/main/res/layout/exercises_screen.xml" value="0.2803442028985507" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.23229166666666667" />
+        <entry key="app/src/main/res/layout/fragment_workouts.xml" value="0.23229166666666667" />
         <entry key="app/src/main/res/layout/settings.xml" value="0.2803442028985507" />
         <entry key="app/src/main/res/layout/workouts_screen.xml" value="0.2803442028985507" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.4244791666666667" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3155" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3155" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_settings.xml" value="0.3155" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_workout_round.xml" value="0.3155" />
       </map>
     </option>
   </component>

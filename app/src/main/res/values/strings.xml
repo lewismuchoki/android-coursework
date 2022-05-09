@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Android Coursework</string>
     <string name="your_nfirst_nsteps_to_njoining_nus">Your\nFirst\nSteps To\nJoining\nUs:</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="workouts">Workouts</string>
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+
 </resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="container1" type="id">workouts</item>
+    <item name="container2" type="id">profile</item>
+    <item name="container3" type="id">settings</item>
+</resources>
