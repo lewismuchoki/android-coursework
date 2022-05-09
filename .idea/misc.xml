@@ -24,10 +24,11 @@
         <entry key="app/src/main/res/layout/difficulty_level.xml" value="0.2803442028985507" />
         <entry key="app/src/main/res/layout/exercises_screen.xml" value="0.2803442028985507" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.23229166666666667" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.11322188449848024" />
         <entry key="app/src/main/res/layout/fragment_workouts.xml" value="0.23229166666666667" />
         <entry key="app/src/main/res/layout/settings.xml" value="0.2803442028985507" />
         <entry key="app/src/main/res/layout/workouts_screen.xml" value="0.2803442028985507" />
-        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.4244791666666667" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3155" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3155" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_settings.xml" value="0.3155" />
