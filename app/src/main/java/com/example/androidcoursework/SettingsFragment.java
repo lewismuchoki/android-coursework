@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment;
 
 public class SettingsFragment extends Fragment {
 
-    public SettingsFragment(){
+    public SettingsFragment() {
         // require a empty public constructor
     }
 

@@ -17,14 +17,15 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bottomNavigationView =(BottomNavigationView) findViewById(R.id.bottomNavigationView);
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         bottomNavigationView.setSelectedItemId(R.id.workouts);
 
     }
+
     WorkoutsFragment workoutsFragment = new WorkoutsFragment();
-    ProfileFragment profileFragment= new ProfileFragment();
+    ProfileFragment profileFragment = new ProfileFragment();
     SettingsFragment settingsFragment = new SettingsFragment();
 
     @Override
@@ -32,15 +33,15 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         switch (item.getItemId()) {
             case R.id.workouts:
-                getSupportFragmentManager().beginTransaction().replace(R.id.container1, workoutsFragment).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, workoutsFragment).commit();
                 return true;
 
             case R.id.profile:
-                getSupportFragmentManager().beginTransaction().replace(R.id.container2, profileFragment).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, profileFragment).commit();
                 return true;
 
             case R.id.settings:
-                getSupportFragmentManager().beginTransaction().replace(R.id.container3, settingsFragment).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, settingsFragment).commit();
                 return true;
         }
         return false;
