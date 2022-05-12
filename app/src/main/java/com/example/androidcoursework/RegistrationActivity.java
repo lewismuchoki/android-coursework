@@ -59,44 +59,44 @@ public class RegistrationActivity extends AppCompatActivity {
                 regPassword.setError("Password is Required");
             } else {
 
-//                UserDetails userDetails = new UserDetails("null", "null", email);
-//                mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
-//                    if (task.isSuccessful()) {
-//                        Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
-//                        startActivity(intent);
-//                        finish();
-//                        signupMessage.setVisibility(View.VISIBLE);
-//                        progressBar2.setVisibility(View.VISIBLE);
-//                        btnReg.setEnabled(false);
-//
-//                        users = FirebaseDatabase.getInstance().getReference().child("user-details").child(mAuth.getCurrentUser().getUid());
-//
-//                        users.setValue(userDetails).addOnCompleteListener(task1 -> {
-//                            //Do nothing
-//                        });
-//                    } else {
-//                        Toast.makeText(RegistrationActivity.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
-//                        signupMessage.setVisibility(View.GONE);
-//                        progressBar2.setVisibility(View.GONE);
-//                        btnReg.setEnabled(true);
-//                    }
-//                });
-//                signupMessage.setVisibility(View.VISIBLE);
-//                progressBar2.setVisibility(View.VISIBLE);
-//                btnReg.setEnabled(false);
-//
-//                mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
-//                    if (task.isSuccessful()) {
-//                        Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
-//                        startActivity(intent);
-//                        finish();
-//                    } else {
-//                        Toast.makeText(RegistrationActivity.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
-//                        signupMessage.setVisibility(View.GONE);
-//                        progressBar2.setVisibility(View.GONE);
-//                        btnReg.setEnabled(true);
-//                    }
-//                });
+                UserDetails userDetails = new UserDetails("null", "null", email);
+                mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        finish();
+                        signupMessage.setVisibility(View.VISIBLE);
+                        progressBar2.setVisibility(View.VISIBLE);
+                        btnReg.setEnabled(false);
+
+                        users = FirebaseDatabase.getInstance().getReference().child("user-details").child(mAuth.getCurrentUser().getUid());
+
+                        users.setValue(userDetails).addOnCompleteListener(task1 -> {
+                            //Do nothing
+                        });
+                    } else {
+                        Toast.makeText(RegistrationActivity.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
+                        signupMessage.setVisibility(View.GONE);
+                        progressBar2.setVisibility(View.GONE);
+                        btnReg.setEnabled(true);
+                    }
+                });
+                signupMessage.setVisibility(View.VISIBLE);
+                progressBar2.setVisibility(View.VISIBLE);
+                btnReg.setEnabled(false);
+
+                mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        Toast.makeText(RegistrationActivity.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
+                        signupMessage.setVisibility(View.GONE);
+                        progressBar2.setVisibility(View.GONE);
+                        btnReg.setEnabled(true);
+                    }
+                });
                 Toast.makeText(this, "It is working!!", Toast.LENGTH_SHORT).show();
             }
         });
