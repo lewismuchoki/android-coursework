@@ -1,6 +1,7 @@
 package com.example.androidcoursework;
 
 public class UserDetails {
+    String username;
     String firstName;
     String lastName;
     String email;
@@ -8,10 +9,19 @@ public class UserDetails {
     public UserDetails() {
     }
 
-    public UserDetails(String firstName, String lastName, String email) {
+    public UserDetails(String username, String firstName, String lastName, String email) {
+        this.username = username;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getFirstName() {
