@@ -59,7 +59,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 regPassword.setError("Password is Required");
             } else {
 
-                UserDetails userDetails = new UserDetails("null","null", "null", email);
+                UserDetails userDetails = new UserDetails("null","null", "null", email,"null");
                 mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
                         Intent intent = new Intent(RegistrationActivity.this, SetupActivity.class);

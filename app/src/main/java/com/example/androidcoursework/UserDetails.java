@@ -5,15 +5,17 @@ public class UserDetails {
     String firstName;
     String lastName;
     String email;
+    String pin;
 
     public UserDetails() {
     }
 
-    public UserDetails(String username, String firstName, String lastName, String email) {
+    public UserDetails(String username, String firstName, String lastName, String email, String pin) {
         this.username = username;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.pin = pin;
     }
 
     public String getUsername() {
@@ -46,5 +48,13 @@ public class UserDetails {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getPin() {
+        return pin;
+    }
+
+    public void setPin(String pin) {
+        this.pin = pin;
     }
 }
