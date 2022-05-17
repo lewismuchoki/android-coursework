@@ -8,8 +8,9 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="605dp"
+        android:layout_width="411dp"
+        android:layout_height="733dp"
+        android:background="@drawable/workout_background"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,25 +26,33 @@
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Abs Workout" />
+            android:buttonTint="@color/white"
+            android:text="Abs Workout"
+            android:textColor="@color/white" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Arms Workout" />
+            android:buttonTint="@color/white"
+            android:text="Arms Workout"
+            android:textColor="@color/white" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Chest Workout" />
+            android:buttonTint="@color/white"
+            android:text="Chest Workout"
+            android:textColor="@color/white" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Legs Workout" />
+            android:buttonTint="@color/white"
+            android:text="Legs Workout"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
