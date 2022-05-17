@@ -117,7 +117,7 @@ public class SettingsFragment extends Fragment implements TimePickerDialog.OnTim
 
     private void cancelAlarm() {
         AlarmManager alarmManager = (AlarmManager) getContext().getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(getContext(), MainActivity.class);
+        Intent intent = new Intent(getContext(), NotificationReceiver.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(getContext(), 1, intent, 0);
 
         alarmManager.cancel(pendingIntent);
