@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -68,6 +69,13 @@ public class SettingsFragment extends Fragment implements TimePickerDialog.OnTim
     @Override
     public void onTimeSet(TimePicker timePicker, int hourOfDay, int minute) {
         //Do nothing
+        Calendar c = Calendar.getInstance();
+        c.set(Calendar.HOUR_OF_DAY, hourOfDay);
+        c.set(Calendar.MINUTE, minute);
+        c.set(Calendar.SECOND, 0);
+
+        updateTimeText(c);
+        startAlarm(c);
     }
 
     private void selectWorkoutTime() {
@@ -75,7 +83,12 @@ public class SettingsFragment extends Fragment implements TimePickerDialog.OnTim
         int hour = c.get(Calendar.HOUR_OF_DAY);
         int minute = c.get(Calendar.MINUTE);
 
-        TimePickerDialog dialog = new TimePickerDialog(getContext(), this, hour, minute, false);
+        TimePickerDialog dialog = new TimePickerDialog(
+                getContext(),
+                this,
+                hour,
+                minute,
+                false);
         dialog.show();
 
 
@@ -104,7 +117,7 @@ public class SettingsFragment extends Fragment implements TimePickerDialog.OnTim
 
     private void cancelAlarm() {
         AlarmManager alarmManager = (AlarmManager) getContext().getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(getContext(), NotificationReceiver.class);
+        Intent intent = new Intent(getContext(), MainActivity.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(getContext(), 1, intent, 0);
 
         alarmManager.cancel(pendingIntent);
