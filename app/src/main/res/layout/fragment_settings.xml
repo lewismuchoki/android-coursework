@@ -64,26 +64,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="25dp"
             android:background="@drawable/inputs"
-            android:text="Set Reminder"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:transitionName="login_signup_trans" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/cancelReminder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="25dp"
-            android:background="@drawable/inputs"
-            android:text="Cancel Reminder"
+            android:text="Change Reminder"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:transitionName="login_signup_trans" />

@@ -6,13 +6,16 @@ import android.app.PendingIntent;
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
@@ -25,8 +28,8 @@ import java.util.Calendar;
 public class SettingsFragment extends Fragment implements TimePickerDialog.OnTimeSetListener {
     private Button logOut;
     private Button selectReminder;
-    private Button cancelAlarm;
     private TextView showReminder;
+    private Switch aSwitch;
 
     public SettingsFragment() {
         // require a empty public constructor
@@ -38,15 +41,25 @@ public class SettingsFragment extends Fragment implements TimePickerDialog.OnTim
         View view = inflater.inflate(R.layout.fragment_settings, container, false);
         logOut = view.findViewById(R.id.logout);
         selectReminder = view.findViewById(R.id.selectReminder);
-        cancelAlarm = view.findViewById(R.id.cancelReminder);
         showReminder = view.findViewById(R.id.showReminder);
+        aSwitch = view.findViewById(R.id.enableNotification);
+
+        SharedPreferences sharedPreferences = getContext().getSharedPreferences("State", Context.MODE_PRIVATE);
+        SharedPreferences.Editor preferences = sharedPreferences.edit();
+        aSwitch.setChecked(sharedPreferences.getBoolean("isChecked", false));
+        aSwitch.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                selectWorkoutTime();
+                preferences.putBoolean("isChecked", true);
+            } else {
+                cancelAlarm();
+                preferences.putBoolean("isChecked", false);
+            }
+            preferences.apply();
+        });
 
         selectReminder.setOnClickListener(view12 -> {
             selectWorkoutTime();
-        });
-
-        cancelAlarm.setOnClickListener(view13 -> {
-            cancelAlarm();
         });
 
         logOut.setOnClickListener(view1 -> new AlertDialog.Builder(getContext())
