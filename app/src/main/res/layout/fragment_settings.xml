@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -33,12 +32,63 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <Button
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/showReminder"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Choose Reminder Time"
-        android:textAllCaps="false" />
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="No reminder set"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/enableNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Enable Reminder"
+            android:layout_marginStart="10dp"/>
+
+        <Button
+            android:id="@+id/selectReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/inputs"
+            android:text="Set Reminder"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:transitionName="login_signup_trans" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cancelReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/inputs"
+            android:text="Cancel Reminder"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:transitionName="login_signup_trans" />
+
+    </RelativeLayout>
 
     <Button
         android:id="@+id/logout"

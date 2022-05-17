@@ -63,15 +63,6 @@
         android:textColor="#000"
         android:textSize="18sp" />
 
-    <Switch
-        android:id="@+id/enableEncryption"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:switchMinWidth="56dp"
-        android:text="Enable Passcode On Startup:" />
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

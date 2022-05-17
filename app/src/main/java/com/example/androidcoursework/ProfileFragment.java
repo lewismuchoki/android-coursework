@@ -28,7 +28,6 @@ public class ProfileFragment extends Fragment {
     private FirebaseAuth auth;
     private DatabaseReference reference;
     private Button update;
-    private Switch aSwitch;
 
     private TextView username;
     private TextView userFname;
@@ -56,7 +55,6 @@ public class ProfileFragment extends Fragment {
         userLname = view.findViewById(R.id.lastName);
         userEmail = view.findViewById(R.id.email);
         update = view.findViewById(R.id.updateAccount);
-        aSwitch = view.findViewById(R.id.enableEncryption);
 
         auth = FirebaseAuth.getInstance();
         reference = FirebaseDatabase.getInstance().getReference("user-details").child(auth.getCurrentUser().getUid());
@@ -84,21 +82,6 @@ public class ProfileFragment extends Fragment {
         });
 
         update.setOnClickListener(view1 -> updateUser());
-
-        SharedPreferences sharedPreferences = this.getActivity().getSharedPreferences("State", Context.MODE_PRIVATE);
-        SharedPreferences.Editor preferences = sharedPreferences.edit();
-        aSwitch.setChecked(sharedPreferences.getBoolean("isChecked", false));
-        aSwitch.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            if (isChecked && pin.equals("null")) {
-                Toast.makeText(getContext(), "You need to set a passcode first!!", Toast.LENGTH_SHORT).show();
-                aSwitch.setChecked(false);
-            } else if (isChecked) {
-                preferences.putBoolean("isChecked", true);
-            } else {
-                preferences.putBoolean("isChecked", false);
-            }
-            preferences.apply();
-        });
 
         return view;
     }
