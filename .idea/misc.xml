@@ -14,6 +14,7 @@
         <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/drawable/inputs.xml" value="0.2435" />
         <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/drawable/login.xml" value="0.2435" />
         <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/layout-v23/activity_registration.xml" value="0.25625" />
+        <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/layout/activity_exercise_screen.xml" value="0.25343999226562525" />
         <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/layout/activity_login.xml" value="0.20742753623188406" />
         <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/layout/activity_main.xml" value="0.1933876811594203" />
         <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/layout/activity_registration.xml" value="0.25343999226562525" />
@@ -27,11 +28,12 @@
         <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/layout/fragment_workouts.xml" value="0.20742753623188406" />
         <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/layout/settings.xml" value="0.20742753623188406" />
         <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/layout/toolbar_layout.xml" value="0.20742753623188406" />
+        <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/layout/workout_return.xml" value="0.25343999226562525" />
         <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/layout/workouts_screen.xml" value="0.20742753623188406" />
         <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25625" />
+        <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2215" />
+        <entry key="..\:/Users/Prince/AndroidStudioProjects/android-coursework/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.124" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.239" />
-        <entry key="app/src/main/res/layout/activity_exercise_screen.xml" value="0.23229166666666667" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.3378623188405797" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3609375" />
         <entry key="app/src/main/res/layout/activity_passcode.xml" value="0.2328125" />
         <entry key="app/src/main/res/layout/activity_registration.xml" value="0.2328125" />
@@ -43,7 +45,6 @@
         <entry key="app/src/main/res/layout/fragment_workouts.xml" value="0.3020088085229846" />
         <entry key="app/src/main/res/layout/settings.xml" value="0.2803442028985507" />
         <entry key="app/src/main/res/layout/toolbar_layout.xml" value="0.2328125" />
-        <entry key="app/src/main/res/layout/workout_return.xml" value="0.2328125" />
         <entry key="app/src/main/res/layout/workouts_screen.xml" value="0.2803442028985507" />
       </map>
     </option>

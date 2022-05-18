@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setTitle("Workout App");
+        getSupportActionBar().setTitle("Home Workout");
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
 

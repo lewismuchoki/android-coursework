@@ -31,6 +31,7 @@ public class WorkoutsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent( view.getContext(), DifficultyLevel.class);
+                i.putExtra("type", "abs");
                 startActivity(i);
             }
         });
@@ -39,6 +40,7 @@ public class WorkoutsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent i= new Intent(view.getContext(), DifficultyLevel.class);
+                i.putExtra("type", "arms");
                 startActivity(i);
             }
         });
@@ -47,6 +49,7 @@ public class WorkoutsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent i= new Intent(view.getContext(), DifficultyLevel.class);
+                i.putExtra("type", "chest");
                 startActivity(i);
             }
         });
@@ -55,6 +58,7 @@ public class WorkoutsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent i= new Intent(view.getContext(), DifficultyLevel.class);
+                i.putExtra("type", "legs");
                 startActivity(i);
             }
         });

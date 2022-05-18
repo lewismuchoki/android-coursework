@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -16,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <include
-            android:id="@+id/content"
+            android:id="@+id/content1"
             layout="@layout/toolbar_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -38,18 +37,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Workout 3" />
-
-        <CheckBox
-            android:id="@+id/checkBox4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Workout 4" />
-
-        <CheckBox
-            android:id="@+id/checkBox5"
-            android:layout_width="422dp"
-            android:layout_height="wrap_content"
-            android:text="Workout 5" />
 
     </LinearLayout>
 
